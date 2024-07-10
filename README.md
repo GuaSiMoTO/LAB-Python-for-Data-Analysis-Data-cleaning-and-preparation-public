@@ -17,7 +17,7 @@ First things first, head over to GitHub and click the fork button to create a co
 
 You've been hired as a data analyst for a small company that sells various products online. The company has provided you with a dataset containing information about their products, including prices, categories, and sales dates. However, the data is not clean and requires significant preparation before it can be analyzed effectively.
 
-Your task is to clean and prepare this data using pandas, a powerful data manipulation library in Python. Throughout this lab, you will learn how to handle missing values, parse dates, normalize text data, and apply scaling techniques. By the end of the lab, you will have a clean dataset ready for analysis and will be able to provide valuable insights to the management team.
+Your task is to clean and prepare this data using pandas, a powerful data manipulation library in Python. By the end of the lab, you will have a clean dataset ready for analysis and will be able to provide valuable insights to the management team.
 
 ## Iteration 1: Introduction to Data Cleaning
 
