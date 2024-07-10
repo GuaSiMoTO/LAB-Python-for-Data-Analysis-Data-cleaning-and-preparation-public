@@ -15,19 +15,20 @@ First things first, head over to GitHub and click the fork button to create a co
 
 ## Scenario
 
-You've been hired as a data analyst for a small company. They have given you a set of product data that needs cleaning and analysis. Your task is to manage this data using pandas and provide insights to the management team.
+You've been hired as a data analyst for a small company that sells various products online. The company has provided you with a dataset containing information about their products, including prices, categories, and sales dates. However, the data is not clean and requires significant preparation before it can be analyzed effectively.
+
+Your task is to clean and prepare this data using pandas, a powerful data manipulation library in Python. Throughout this lab, you will learn how to handle missing values, parse dates, normalize text data, and apply scaling techniques. By the end of the lab, you will have a clean dataset ready for analysis and will be able to provide valuable insights to the management team.
 
 ## Iteration 1: Introduction to Data Cleaning
 
 Set up your Python environment and ensure you have pandas installed.
 
-Load the provided dataset into a pandas DataFrame.
-Display the first 10 rows of the DataFrame.
-Check for any missing values in the dataset and list the columns with missing data.
+- Load the provided dataset into a pandas DataFrame.
+- Display the first 10 rows of the DataFrame.
+- Check for any missing values in the dataset and list the columns with missing data.
 
 ## Iteration 2: Handling Missing Data
 
-Task:
 - Identify columns with missing data and the percentage of missing data in each column.
 - Use appropriate methods to handle missing data:
   - For numerical columns, fill missing values with the mean of the column.
@@ -36,28 +37,24 @@ Task:
 
 ## Iteration 3: Parsing Dates
 
-Task:
 - Convert any columns with date information into pandas datetime format.
 - Extract year, month, and day from the date column and create new columns for each.
 - Set the date column as the index of the DataFrame.
 
 ## Iteration 4: Character Encoding
 
-Task:
 - Detect and resolve any issues with character encoding in the dataset.
 - Ensure all text data is properly encoded in UTF-8.
 - Normalize text data to ensure consistency (e.g., all text in lowercase, removing special characters).
 
 ## Iteration 5: Scaling and Normalization Techniques
 
-Task:
 - Use Scikit-learn to apply scaling and normalization techniques to the numerical data.
 - Compare different scaling methods (e.g., MinMaxScaler, StandardScaler) and determine which one is most appropriate for the dataset.
 - Apply the chosen scaling method to the numerical columns in the DataFrame.
 
 ## Iteration 6: Identifying and Correcting Inconsistent Data Entry
 
-Task:
 - Identify inconsistent data entries (e.g., variations in spelling, incorrect data types).
 - Correct these inconsistencies using appropriate pandas methods.
 - Ensure all corrections are applied throughout the entire dataset consistently.
