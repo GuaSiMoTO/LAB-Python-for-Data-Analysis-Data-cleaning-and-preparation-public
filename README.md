@@ -60,7 +60,8 @@ Set up your Python environment and ensure you have pandas installed.
 
 ## Bonus
 
-For this bonus section, you will practice your data cleaning skills on a real-world dataset from Kaggle. This will help you solidify the techniques you have learned and apply them to a new context. The dataset you will use contains detailed information about Airbnb listings. You will need to create a new Jupyter Notebook to work on this task. The dataset you will use can be found at [Airbnb Dataset](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring){:target="_blank"} on Kaggle.
+For this bonus section, you will practice your data cleaning skills on a real-world dataset from Kaggle. This will help you solidify the techniques you have learned and apply them to a new context. The dataset you will use contains detailed information about Airbnb listings. You will need to create a new Jupyter Notebook to work on this task. The dataset you will use can be found at <a href="https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring" target="_blank">Airbnb Dataset</a> on Kaggle.
+
 
 ## How to Submit
 
