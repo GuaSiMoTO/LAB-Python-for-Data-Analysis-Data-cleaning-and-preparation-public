@@ -30,16 +30,15 @@ Set up your Python environment and ensure you have pandas installed.
 ## Iteration 2: Handling Missing Data
 
 - Identify columns with missing data and the percentage of missing data in each column.
-- Use appropriate methods to handle missing data:
-  - For numerical columns, fill missing values with the mean of the column.
-  - For categorical columns, fill missing values with the mode of the column.
+- For numerical columns, fill missing values with the mean of the column. (E.g., if price has missing values, fill them with the mean price.)
+- For categorical columns, fill missing values with the mode of the column. (E.g., if category has missing values, fill them with the most frequent category.)
 - Verify that all missing data has been handled appropriately.
 
-## Iteration 3: Parsing Dates
+## Iteration 3: Identifying and Correcting Inconsistent Data Entry
 
-- Convert any columns with date information into pandas datetime format.
-- Extract year, month, and day from the date column and create new columns for each.
-- Set the date column as the index of the DataFrame.
+- Identify inconsistent data entries in categorical columns (e.g., variations in spelling, incorrect data types in category).
+- Use pandas methods to correct these inconsistencies (e.g., standardize category names to lowercase).
+- Ensure all corrections are applied throughout the entire dataset consistently.
 
 ## Iteration 4: Character Encoding
 
@@ -47,17 +46,21 @@ Set up your Python environment and ensure you have pandas installed.
 - Ensure all text data is properly encoded in UTF-8.
 - Normalize text data to ensure consistency (e.g., all text in lowercase, removing special characters).
 
-## Iteration 5: Scaling and Normalization Techniques
+## Iteration 5: Parsing Dates
+
+- Convert any columns with date information into pandas datetime format (e.g., sales_date).
+- Extract year, month, and day from the date column and create new columns for each.
+- Set the date column as the index of the DataFrame.
+
+## Iteration 6: Scaling and Normalization Techniques
 
 - Use Scikit-learn to apply scaling and normalization techniques to the numerical data.
 - Compare different scaling methods (e.g., MinMaxScaler, StandardScaler) and determine which one is most appropriate for the dataset.
 - Apply the chosen scaling method to the numerical columns in the DataFrame.
 
-## Iteration 6: Identifying and Correcting Inconsistent Data Entry
+## Bonus
 
-- Identify inconsistent data entries (e.g., variations in spelling, incorrect data types).
-- Correct these inconsistencies using appropriate pandas methods.
-- Ensure all corrections are applied throughout the entire dataset consistently.
+For this bonus section, you will practice your data cleaning skills on a real-world dataset from Kaggle. This will help you solidify the techniques you have learned and apply them to a new context. The dataset you will use contains detailed information about Airbnb listings. You will need to create a new Jupyter Notebook to work on this task. The dataset you will use can be found at [Airbnb Dataset](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring) on Kaggle.
 
 ## How to Submit
 
