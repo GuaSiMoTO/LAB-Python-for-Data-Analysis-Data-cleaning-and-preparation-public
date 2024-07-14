@@ -70,9 +70,17 @@ Set up your Python environment and ensure you have pandas installed.
 
 For this bonus section, you’ll get to practice your data cleaning skills with a real-world dataset from Kaggle. This is a great opportunity to apply what you’ve learned in a new context. The dataset provides detailed information about Airbnb listings. To start, create a new Jupyter Notebook for your work. You can find the dataset at [Airbnb Dataset on Kaggle](https://www.kaggle.com/datasets/yagunnersya/fifa-21-messy-raw-dataset-for-cleaning-exploring).
 
-## How to Submit
+## Submission
+Once you have completed your analysis and visualizations, push your Jupyter notebook to your forked GitHub repository. Ensure that your final submission includes narratives explaining your visualizations and insights.
+Run the following commands:
 
-Once you have completed your analysis and visualizations, push your Jupyter notebook to your forked GitHub repository.
+```
+$ git add .
+$ git commit -m "done"
+$ git push origin main
+```
+
+Then create a Pull Request!!
 
 ## Additional Resources
 - [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
