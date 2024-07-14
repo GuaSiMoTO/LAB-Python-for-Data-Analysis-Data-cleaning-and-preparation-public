@@ -68,6 +68,14 @@ To submit this LAB, upload the file to your forked repository.
 
 ## Additional Resources
 
+## How to Submit
+
+Once you have completed your analysis and visualizations, push your Jupyter notebook to your forked GitHub repository.
+
+## Additional Resources
 - [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
 - [Python Data Analysis Library (Pandas) Tutorial](https://pandas.pydata.org/pandas-docs/stable/getting_started/intro_tutorials/index.html)
+
+
+![happy_coding](https://user-images.githubusercontent.com/970858/63899010-c23fc480-c9ea-11e9-84a2-542907e42362.png)
+
