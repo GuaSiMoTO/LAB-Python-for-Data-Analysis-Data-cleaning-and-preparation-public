@@ -10,8 +10,10 @@ Hello everyone, welcome to this lab where we will delve into data manipulation a
 
 ## Initial Setup
 
-### Fork The Repository
-First things first, head over to GitHub and click the fork button to create a copy of this repository in your personal account. This will allow you to make changes and save your progress.
+## Requirements
+Start by forking the provided GitHub repository to your account and then clone it locally. This will be your workspace for completing the lab exercises.
+- [Learn how to fork this repo](https://guides.github.com/activities/forking/)
+- Clone this repo into your `code/labs` folder
 
 ## Scenario
 
