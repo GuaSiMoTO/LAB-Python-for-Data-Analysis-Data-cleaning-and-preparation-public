@@ -64,12 +64,6 @@ For this bonus section, you’ll get to practice your data cleaning skills with 
 
 ## How to Submit
 
-To submit this LAB, upload the file to your forked repository.
-
-## Additional Resources
-
-## How to Submit
-
 Once you have completed your analysis and visualizations, push your Jupyter notebook to your forked GitHub repository.
 
 ## Additional Resources
