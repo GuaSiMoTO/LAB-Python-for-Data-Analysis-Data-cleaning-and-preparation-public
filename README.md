@@ -19,7 +19,7 @@ You've been hired as a data analyst for a small company that sells various produ
 
 Your task is to clean and prepare this data using pandas, a powerful data manipulation library in Python. By the end of the lab, you will have a clean dataset ready for analysis and will be able to provide valuable insights to the management team.
 
-## Iteration 1: Introduction to Data Cleaning
+## Iteration 1: Setting Up
 
 Set up your Python environment and ensure you have pandas installed.
 
