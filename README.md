@@ -39,7 +39,7 @@ To get started, follow these steps:
     jupyter lab
     ```
 
-3. In the Jupyter Notebook interface, open the `lab.ipynb` file.
+3. In the Jupyter Notebook interface, open the `LAB-Data-Cleaning.ipynb` file.
 
 To test that everything is set up correctly, run the first cell in the notebook. This cell usually contains import statements and initial setup code. If it runs without errors, you are ready to start solving the exercises.
 
