@@ -56,6 +56,7 @@ pip install -r requirements.txt
 Set up your Python environment and ensure you have pandas installed.
 
 - Load the provided dataset into a pandas DataFrame.
+**Note**: Make sure the file is properly encoded in UTF-8.
 - Display the first 10 rows of the DataFrame.
 
 ## Iteration 2: Handling Missing Data
@@ -67,23 +68,45 @@ Set up your Python environment and ensure you have pandas installed.
 
 ## Iteration 3: Identifying and Correcting Inconsistent Data Entry
 
-- Identify inconsistent data entries in categorical columns (e.g., variations in spelling, incorrect data types in category).
-- Use pandas methods to correct these inconsistencies (e.g., standardize category names to lowercase).
-- Ensure all corrections are applied throughout the entire dataset consistently.
+In this iteration, your task is to ensure that the values in the categorical columns are consistent. Sometimes, datasets contain **variations** or **typos** in category names, which can make analysis difficult. To correct these issues, you need to have a **reference list of the correct categories**, which is provided below.
 
-## Iteration 4: Character Encoding
+#### **Reference List of Correct Categories:**
+The valid categories in this dataset are as follows:
 
-- Detect and resolve any issues with character encoding in the dataset.
-- Ensure all text data is properly encoded in UTF-8.
-- Normalize text data to ensure consistency (e.g., all text in lowercase, removing special characters).
+- **Toys**
+- **Electronics**
+- **Beauty**
+- **Clothing**
+- **Home**
+- **Home Appliances**
 
-## Iteration 5: Parsing Dates
+Any other variation should be corrected to match one of these categories.
+
+#### **Objective:**
+- Identify and correct any inconsistent entries in the categorical columns, such as:
+  - **Spelling variations** (e.g., "Toys" and "toys" should be unified as "Toys").
+  - **Typos** (e.g., "Electroncs" should be corrected to "Electronics").
+
+It is important to ensure that the category values are **consistent** and **uniform** for accurate analysis. In this iteration, you are not concerned with converting text to lowercase (that is handled in another step), but rather with unifying incorrect categories based on the reference list of valid categories.
+
+#### **Steps to solve:**
+
+1. **Identify inconsistent categories:**
+   Use `df['category'].unique()` to review the categories in the `category` column. Compare these values with the provided reference list of valid categories to identify any errors or variations.
+
+2. **Correct inconsistencies:**
+   Use the pandas `replace()` method to correct the variations. Unify the incorrect names with the correct version from the reference list of valid categories.
+
+3. **Verify corrections:**
+   After making the corrections, check the unique values again to ensure all categories have been unified correctly.
+
+## Iteration 4: Parsing Dates
 
 - Convert any columns with date information into pandas datetime format (e.g., sales_date).
 - Extract year, month, and day from the date column and create new columns for each.
 - Set the date column as the index of the DataFrame.
 
-## Iteration 6: Scaling and Normalization Techniques
+## Iteration 5: Scaling and Normalization Techniques
 
 - Use Scikit-learn to apply scaling and normalization techniques to the numerical data.
 - Compare different scaling methods (e.g., MinMaxScaler, StandardScaler) and determine which one is most appropriate for the dataset.
