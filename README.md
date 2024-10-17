@@ -113,7 +113,20 @@ The column we will focus on in this iteration is `sales_date`, which records the
 - Extract the **year**, **month**, and **day** from the date column and create new columns for each. This step is useful if you later want to group data by month, year, or day for analysis.
 - Set the `sales_date` column as the **index** of the DataFrame. This makes it easier to perform time-based indexing, filtering, or resampling.
 
-## Iteration 5: Scaling and Normalization Techniques
+## Iteration 5: Creating Dummy Variables and Preventing Redundancy
+In this iteration, we will convert the "region" column into dummy variables and ensure that we avoid the dummy trap by dropping one of the dummy variables. The dummy trap occurs when there is perfect multicollinearity between the dummy variables, which can confuse machine learning algorithms and lead to inaccurate results.
+
+**Objective**:
+- Convert the "region" column to dummy variables. We will use the pandas get_dummies() function, but we will drop one of the dummy variables to avoid redundancy.
+
+- Avoid the dummy trap by using the drop_first=True option in get_dummies(), which removes the first dummy variable.
+
+**Steps to Solve**:
+- Generate dummy variables: Convert the "region" column into dummy variables and drop the first one to avoid the dummy trap.
+
+- Concatenate dummy variables to the DataFrame: Join the newly created dummy variables with the original DataFrame.
+
+## Iteration 6: Scaling and Normalization Techniques
 
 In this iteration, your task is to apply **scaling** and **normalization** techniques to the numerical data in the dataset. Scaling and normalization are essential preprocessing steps in machine learning and data analysis, especially when working with algorithms that are sensitive to the ranges or distributions of the data.
 
