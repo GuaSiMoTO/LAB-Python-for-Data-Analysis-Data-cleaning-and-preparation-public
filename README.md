@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
 Set up your Python environment and ensure you have pandas installed.
 
-- Load the provided dataset into a pandas DataFrame.
+- Load the provided dataset `product_sales_dataset` into a pandas DataFrame.
 
 > ***Note:*** Make sure the file is properly encoded in UTF-8.
 
