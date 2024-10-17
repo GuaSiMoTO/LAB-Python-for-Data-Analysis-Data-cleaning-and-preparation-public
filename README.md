@@ -119,13 +119,6 @@ In this iteration, your task is to apply **scaling** and **normalization** techn
 
 Many machine learning models (such as linear regression, neural networks, and clustering algorithms) perform better when the numerical data is scaled or normalized because it helps avoid biases caused by different ranges or magnitudes in the features. For example, if one feature is measured in large units (like price) and another in small units (like the number of units sold), it can distort the model's performance if they are not scaled properly.
 
-#### **Objective:**
-- Use **Scikit-learn** to apply scaling and normalization techniques to the numerical data in the dataset. This step ensures that the features are on a similar scale and helps improve the performance of machine learning models.
-- **Compare different scaling methods**, such as `MinMaxScaler` and `StandardScaler`, to determine which one is the most appropriate for the dataset. Each method has its own advantages, and the choice depends on the distribution and range of your data.
-- Once you decide which scaling method is appropriate, apply it to the numerical columns of the DataFrame to standardize the data.
-
-By the end of this iteration, your numerical features will be properly scaled or normalized, making them more suitable for analysis and modeling.
-
 #### **Steps to solve:**
 
 1. **Select the numerical columns:**
