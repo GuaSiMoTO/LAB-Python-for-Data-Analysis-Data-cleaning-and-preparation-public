@@ -102,15 +102,42 @@ It is important to ensure that the category values are **consistent** and **unif
 
 ## Iteration 4: Parsing Dates
 
-- Convert any columns with date information into pandas datetime format (e.g., sales_date).
-- Extract year, month, and day from the date column and create new columns for each.
-- Set the date column as the index of the DataFrame.
+In this iteration, your task is to properly handle and format any columns in the dataset that contain date information. Working with dates is a common requirement when analyzing time-based data, as it allows for more powerful insights such as trends over time, seasonality, or other temporal patterns.
+
+The column we will focus on in this iteration is `sales_date`, which records the date of each sale. You will convert this column into a pandas datetime format, which allows for easier manipulation of the date information and enables the extraction of specific components, such as the year, month, and day.
+
+#### **Objective:**
+- Convert any columns with date information (e.g., `sales_date`) into pandas' `datetime` format.
+- Extract the **year**, **month**, and **day** from the date column and create new columns for each. This step is useful if you later want to group data by month, year, or day for analysis.
+- Set the `sales_date` column as the **index** of the DataFrame. This makes it easier to perform time-based indexing, filtering, or resampling.
 
 ## Iteration 5: Scaling and Normalization Techniques
 
-- Use Scikit-learn to apply scaling and normalization techniques to the numerical data.
-- Compare different scaling methods (e.g., MinMaxScaler, StandardScaler) and determine which one is most appropriate for the dataset.
-- Apply the chosen scaling method to the numerical columns in the DataFrame.
+In this iteration, your task is to apply **scaling** and **normalization** techniques to the numerical data in the dataset. Scaling and normalization are essential preprocessing steps in machine learning and data analysis, especially when working with algorithms that are sensitive to the ranges or distributions of the data.
+
+Many machine learning models (such as linear regression, neural networks, and clustering algorithms) perform better when the numerical data is scaled or normalized because it helps avoid biases caused by different ranges or magnitudes in the features. For example, if one feature is measured in large units (like price) and another in small units (like the number of units sold), it can distort the model's performance if they are not scaled properly.
+
+#### **Objective:**
+- Use **Scikit-learn** to apply scaling and normalization techniques to the numerical data in the dataset. This step ensures that the features are on a similar scale and helps improve the performance of machine learning models.
+- **Compare different scaling methods**, such as `MinMaxScaler` and `StandardScaler`, to determine which one is the most appropriate for the dataset. Each method has its own advantages, and the choice depends on the distribution and range of your data.
+- Once you decide which scaling method is appropriate, apply it to the numerical columns of the DataFrame to standardize the data.
+
+By the end of this iteration, your numerical features will be properly scaled or normalized, making them more suitable for analysis and modeling.
+
+#### **Steps to solve:**
+
+1. **Select the numerical columns:**
+   Identify the numerical columns in your dataset that require scaling or normalization. For instance, in this dataset, numerical columns might include `price` and `units_sold`.
+
+2. **Apply scaling techniques:**
+   You will use **Scikit-learn** to apply two common scaling techniques:
+   - **MinMaxScaler:** Scales the data to a fixed range, usually [0, 1]. It is useful when you need to preserve the relationships between values while bringing them into a standard range.
+   - **StandardScaler:** Standardizes the data by subtracting the mean and scaling to unit variance (i.e., mean 0 and standard deviation 1). This is useful when the data has a normal distribution or when the model assumes normally distributed features.
+
+   After applying each scaling method, you should compare the results to understand how each technique transforms the data.
+
+3. **Compare the scaling results:**
+   Compare the results of both scaling methods by printing a few rows of the scaled data. Based on the results, decide which method is most appropriate for the dataset.
 
 ## Bonus
 
