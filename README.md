@@ -57,7 +57,6 @@ Set up your Python environment and ensure you have pandas installed.
 
 - Load the provided dataset into a pandas DataFrame.
 - Display the first 10 rows of the DataFrame.
-- Check for any missing values in the dataset and list the columns with missing data.
 
 ## Iteration 2: Handling Missing Data
 
